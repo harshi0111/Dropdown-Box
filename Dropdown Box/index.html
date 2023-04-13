@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" class="href" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Dropdown Box</title>
+  </head>
+  <body>
+    <div class="drop_menu">
+      <div class="menu" href="#">
+        <span class="fontawesome-user"></span>
+      </div>
+      <div class="modal list" id="list">
+        <svg id="bow" x="0px" y="0px" viewBox="0 0 64.8 12.3">
+          <path
+            fill="#FFFFFF"
+            d="M33.2,0c12.2,0,23.6,12.3,31.1,12.3s-72.1,0-63.6,0S17.9,0,33.2,0z"
+          />
+        </svg>
+        <div>
+          <span><i class="fa fa-fw fa-google"></i>Google</span>
+          <div class="checkbox">
+            <input type="checkbox" id="Google" />
+            <label for="Google"></label>
+          </div>
+        </div>
+        <div>
+          <span><i class="fa fa-fw fa-linkedin"></i>LinkedIn</span>
+          <div class="checkbox">
+            <input type="checkbox" id="newsletter" />
+            <label for="newsletter"></label>
+          </div>
+        </div>
+        <div>
+          <span><i class="fa fa-fw fa-instagram"></i>Instagram</span>
+          <div class="checkbox">
+            <input type="checkbox" id="insta" />
+            <label for="insta"></label>
+          </div>
+        </div>
+        <div>
+          <span><i class="fa fa-fw fa-twitter"></i>Twitter</span>
+          <div class="checkbox">
+            <input type="checkbox" id="twitter" />
+            <label for="twitter"></label>
+          </div>
+        </div>
+        <div>
+          <span><i class="fa fa-fw fa-github"></i>GitHub</span>
+          <div class="checkbox">
+            <input type="checkbox" id="Github" />
+            <label for="Github"></label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------script----------   -->
+    <script>
+      $(document).ready(function () {
+        $(".menu").click(function () {
+          $("#list").slideToggle("fast");
+        });
+      });
+    </script>
+  </body>
+</html>
